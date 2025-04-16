@@ -6,8 +6,25 @@ header{
   padding: 0 50px;
 }
 .category{
-  
+border: none;
+  padding: 12px;
+  border-radius: 15px 0 0 15px;
+  position: relative;
+  left: 4px;
 }
+.search {
+  padding: 13px 150px 13px 100px;
+  border: none;
+  text-align: center;
+  border-radius: 0 15px 15px 0;
+}
+
+.btn-ser {
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
 body{
   margin: 0;
 
