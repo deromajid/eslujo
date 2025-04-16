@@ -1,0 +1,89 @@
+header{
+    background: black;
+   margin: 0;
+
+}
+.headerpc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerpc img{
+position: relative;
+left: 50px;
+    width: 80px;
+    }
+
+
+
+.catugory{
+height: 37px;
+border-radius: 15px 0px 0px 15px;
+padding-right: 30px;
+text-align: center;
+padding: 5px;
+background: chocolate;
+}
+.catugory option{
+    background: chocolate;
+}
+
+.search{
+    padding: 10px 0px 10px 0;
+    padding-right: 150px;
+    border: none;
+    outline: none;
+background: silver;
+
+}
+.search input{
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+.search ::after{
+    content: none;
+    position: relative;
+
+} 
+.btnn{
+position: absolute;
+    background-color: coral;
+    border-radius: 0 15px 15px 0;
+padding: 4px;
+}
+
+.cart-login{
+padding-right: 40px;
+
+}
+.cart0{
+    padding: 2px;
+    right: 22px;
+    top: -25px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background: rgb(7, 156, 27);
+    border-radius: 20px;
+
+}
+/*menupc***************/
+.menu-pc-ul{
+    text-align: center;
+    list-style-type: none;
+
+}
+.menu-pc-link{
+display: flex;
+
+gap: 30px;
+text-decoration: none;
+text-align: center;
+}
+
+body{
+    margin: auto;
+}
+.body{
+    padding: 20px;
+}
