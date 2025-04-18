@@ -4,46 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eslujo</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="steyl.css">
   <link rel="icon" href="image/logo copia3.png">
 </head>
-<header>
-  <div class="logo">
-<img src="image/logo copia1.png" alt="" width="80">
-  </div>
-  <div>
-    <select class="category">
-      <option value="">all categore</option>
-      <option value="">all categore</option>
-      <option value="">all categore</option>
-      <option value="">all categore</option>
-      <option value="">all categore</option>
-    </select>
-    <input class="search" type="search" placeholder="Search">
-    <button class="btn-ser"><span class="material-symbols-outlined">
-      search
-      </span></button>
-  </div>
-  <div>
-    <button class="btn-sin">sing in</button>
-  </div>
-  
-</header>
-<div class="menu"> 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <ul><a href="#">About</a></ul>
-      <ul><a href="#">Contact</a></ul>
-      <ul><a href="#">Services</a></ul>
-    </ul>
-  </nav>
-</div>
-<div class="page1pc">
-  <img class="logo" src="image/DALL·E-2024-08-25-16.13.07-A-stylish-woman-with-blonde-hair-is-smiling-and-wearing-a-green-shirt.-She-is-accessorized-with-jewelry-including-a-scarf-earrings-necklaces-and-a- (1).webp" alt="">
-</div>
 <body>
+  <header>
+    <div class="logo">
+      <img src="image/logo copia1.png" alt="" width="80">
+    </div>
+    <div>
+      <select class="category">
+        <option value="">all categore</option>
+        <option value="">all categore</option>
+        <option value="">all categore</option>
+        <option value="">all categore</option>
+        <option value="">all categore</option>
+      </select>
+      <input class="search" type="search" placeholder="Search">
+      <button class="btn-ser"><span class="material-symbols-outlined">
+        search
+        </span></button>
+    </div>
+    <div>
+      <span class="material-symbols-outlined">
+        local_mall
+        </span><span class="cart-nomber">0</span>
+    </div>
+  </header>
+  <div class="menu">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <ul><a href="#">About</a></ul>
+        <ul><a href="#">Contact</a></ul>
+        <ul><a href="#">Services</a></ul>
+      </ul>
+    </nav>
+    <button onclick="open" class="btn-sin">Sign in/Register  </button>
+  </div>
+  <div class="page1pc">
+
+  </div>
+  <div class="box-category">
+    <div class="accessory"><img src="image/Luxury Accessories.webp" alt="">
+    <div>
+      <h2>Accessories</h2>
+      <button onclick="open">Accessories</button>
+    </div></div>
+    <div class="necklace"><img src="image/necklace.webp" alt="">
+      <div>
+        <h2>Luxury Necklace</h2>
+        <button onclick="open">Luxury Necklace</button>
+      </div></div>
+      <div class="Bags"><img src="image/eslujo Luxury Bags.webp" alt="">
+        <div>
+          <h2>Luxury Bags</h2>
+          <button onclick="open">Luxury Bags</button>
+        </div></div>
+        <div class="Watches"><img src="image/Luxury Watches.webp" alt="">
+          <div>
+            <h2>Luxury Watches</h2>
+            <button onclick="open">Luxury Watches</button>
+          </div></div>
+  </div>
   
+    <div class="new-products">New products</div>
+    <section id="products"></section>
+  </div>
+
+  <script src="eslujo.js"></script>
 </body>
 </html>

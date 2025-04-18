@@ -2,9 +2,11 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background-image: linear-gradient(black, #1a1919) ;
   padding: 0 50px;
-  
+position: sticky;
+top: 0;
+  z-index: 1000;
 }
 .category{
 border: none;
@@ -12,6 +14,10 @@ border: none;
   border-radius: 9px 0 0 9px;
   position: relative;
   left: 4px;
+  cursor: pointer;
+}
+.category option{
+  cursor: pointer;
 }
 .search {
   padding: 13px 150px 13px 100px;
@@ -22,33 +28,41 @@ border: none;
 /********************************sersh*********************************/
 .btn-ser {
   border: none;
-  padding-top: 5px;
-  padding-bottom: 3px;
-
   position: relative;
   right: 60px;
-  top: 7px;
+  top: 9px;
  border-radius: 6px;
   background: black;
+  cursor: pointer;
 }
 .material-symbols-outlined{
   color: white;
 }
-.btn-sin{
-padding: 10px;
-border: none;
+/*********************************cart*********************************/
+.cart-nomber{
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 10px;
+  padding: 3px;
+  background-color: yellowgreen;
 border-radius: 6px;
-  background-color: coral;
+font-size: 20px;
+cursor: pointer;
 }
-.btn-sin:hover{
-  background: black;
-  color: #ffffffee;
-
+.material-symbols-outlined{
+cursor: pointer;
+  font-size: 30px;
 }
+/**********************************menu pc*********************************/
 .menu{
-  background:silver ;
+  background-image: linear-gradient(#aaaaa4, #2c2929) ;
   margin: 0px;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-right: 60px;
 }
 
 
@@ -62,23 +76,121 @@ list-style: none;
 }
 nav ul a{
   text-decoration: none;
-  color: black;;
+  color: rgb(0, 0, 0);
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
 }
 nav ul a:hover{
   color: white;
 background: chocolate;
 border-radius: 6px;
-padding: 9px;;
-}
- 
-body{
-  margin: 0;
+padding: 9px;
 
 }
+/*********************************button sign in*********************************/
+.btn-sin{
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+    background-color: coral;
+    font-size: 15px;
+  font-weight: bold;
+  }
+  .btn-sin:hover{
+    background: black;
+    color: #ffffffee;
+  
+  } 
+body{
+  margin: 0;
+background-color: #aaaaa4;
+}
 .page1pc{
-  width: 100px;
-  position: ;
-height:450px ;
-background: c;
-  background-image: url(image/DALL·E-2024-08-25-16.13.07-A-stylish-woman-with-blonde-hair-is-smiling-and-wearing-a-green-shirt.-She-is-accessorized-with-jewelry-including-a-scarf-earrings-necklaces-and-a-\ \(1\).webp);
+  width: 100%;
+background-repeat: no-repeat, repeat  ;
+background-size: contain;
+height: 400px;
+border-radius: 0px 0px 20px 20px;
+background-image: url("image/DALL·E-2024-08-25-18.45.19-A-zoomed-in-view-of-a-mans-neck-and-chest-showcasing-a-silver-necklace-and-rings-extended-to-fit-a-landscape-size-suitable-for-a-PC-wallpaper.-The-\ \(1\).webp"),
+url("image/DALL·E-2024-08-25-16.13.07-A-stylish-woman-with-blonde-hair-is-smiling-and-wearing-a-green-shirt.-She-is-accessorized-with-jewelry-including-a-scarf-earrings-necklaces-and-a-\ \(1\).webp")
+;
+}
+
+/*********************************box-category*********************************/
+
+.box-category {
+  display: flex;         
+  gap: 20px;              
+  justify-content: center; 
+  flex-wrap: wrap;   
+  margin-top: 20px;   
+  background-image: linear-gradient(#aaaaa4, #2c2929) ;
+  padding: 20px 0px;
+  border-radius: 20px;
+  margin: 20px; 
+}
+
+.box-category > div {
+  width: 250px;
+  background-color: #eee;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.box-category :hover{
+  background-color: #ddd;
+  cursor: pointer;
+}
+.box-category img{
+  width: 80%;
+  height: 150px;
+}
+.box-category h3{
+  font-size: 20px;
+  margin: 10px 0;
+}
+.box-category button{
+  background: chocolate;
+  border: none;
+  border-radius: 6px;
+  padding: 9px;
+font-weight: bold;
+}
+
+/*********************************products*********************************/
+.new-products{
+padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+
+}
+#products{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#products > div{
+  width: 250px;
+  background-color: #eee;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+#products img{
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+#products button{
+  background: chocolate;
+  border: none;
+  border-radius: 6px;
+  padding: 9px; 
+cursor: pointer;
 }
